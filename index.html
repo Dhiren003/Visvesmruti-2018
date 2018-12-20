@@ -1,0 +1,746 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <meta http-equiv="Cache-Control" content="max-age=259200, must-revalidate" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" />
+    <!-- Title -->
+    <title>VISVESMRUTI 2018</title>
+    <meta name="description" content="You can take your engineering skills to the next level by participating in Visvesmruti this engineer's day!">
+    <!-- MAIN FAVICON -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="VISVESMRUTI">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="rgb(8,200,252)">
+    <meta name="apple-mobile-web-app-title" content="VISVESMRUTI">
+    <link rel="apple-touch-icon" href="#">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/normalize-min.css">
+    <link rel="stylesheet" href="stylesheets/pace.css">
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="stylesheet" href="stylesheets/preloader.css">
+    <!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+</head>
+
+<body>
+    <div id='loader' style='position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: 50; background: #041527 url("img/bg-main.gif") 0 0 repeat;'>
+        <div id="loading">
+			<div id="loading-center">
+				<div id="loading-center-absolute">
+					<div class="object"></div>
+					<div class="object"></div>
+					<div class="object"></div>
+					<div class="object"></div>
+					<div class="object"></div>
+					<div class="object"></div>
+					<div class="object"></div>
+					<div class="object"></div>
+					<div class="object"></div>
+					<div class="object"></div>
+				</div>
+			</div> 
+		</div>
+    </div>
+    <div class="menu-container">
+        <a href="#" class="btn-menu j-btn-menu" data-menu='site-menu'></a>
+        <div class="menu-list" id='site-menu'>
+            <ul>
+                <li><a href="#0" data-screen="1">Teaser</a>
+                </li>
+                <li><a href="#0" data-screen="2">Departments</a>
+                </li>
+                <li><a href="#0" data-screen="9">Time Table</a>
+                </li>
+                <li><a href="#0" data-screen="3">Main Attraction</a>
+                </li>
+                <li><a href="#0" data-screen="4">Sponsors</a>
+                </li>
+                <li><a href="#0" data-screen="5">Committee</a>
+                </li>
+                <li><a href="#0" data-screen="6">Gallery</a>
+                </li>    
+                 <li><a href="#0" data-screen="7">Developers</a>  
+                </li>
+                <li><a href="#0" data-screen="8">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="page-wrapper page">
+        <img src="img/asteroids-left.png" alt="pic" class="a-left">
+        <img src="img/asteroids-right.png" alt="pic" class="a-right">
+        <img src="img/asteroids-left.png" alt="pic" class="b-left">
+        <img src="img/asteroids-right.png" alt="pic" class="b-right">
+        <div class="container">
+            <!-- THE 1st SCREEN -->
+            <canvas id="canvasOne" class="dusty" width="1280" height="1420"></canvas>
+            <canvas id="canvasAustro" class="austro" width="600" height="640"></canvas>
+            <!-- <canvas id="canvasStars" class="bg-stars" width="600" height="640"></canvas> -->
+            <div class="center">
+                <img src="img/vs_logo.png" class="logo-main centered">
+                <h1 class="title title-big"><font face="Cinzel Decorative">VISVESMRUTI</font><span>2018</span></h1>
+                <h4 class="title title-small title-special">DATE : <span>14TH & 15TH SEPTEMBER, 2018</span></h4>
+                <p class="title title-big title-special" id="countdown" style="color: orange;"></p>
+                <a href="#0" class="btn-arrow-down to-second centered"> <span class='arrow-down-p1'></span> <span class='arrow-down-p2'></span><span class='arrow-down-p3'></span>
+                </a>
+                <div class="tiny-stars">
+                    <img src="img/stars2.svg" alt="">
+                </div>
+                <div class="tiny-stars middle-stars">
+                    <img src="img/stars3.svg" alt="">
+                </div>
+                <div class="planet-big centered screen-1">
+                    <!-- ORBIT --><span class="round round-1"></span> <span class="round round-2"></span> <span class="round round-3"></span> <span class="round round-4"></span> <span class="round round-5"></span>
+                    <!-- END OF ORBIT -->
+                </div>
+                <!-- end of planet-big centered -->
+                <div class="planet-big-content centered">
+                    <h2><span class='title-cursive'>TEASER</span></h2>
+                    <h4 class="title title-small"></h4>
+                    <video src="vs_photos/teaser.mp4" type="video/mp4" width="720" controls>
+                    </video> 
+                </div>                
+				<!-- END OF THE 1st SCREEN -->
+				<!-- THE 2nd SCREEN -->
+                <div class="screen-9">
+                    <div class="block">
+                        <h3 class="title title-medium">Visvesmruti App</h3>
+                        <h4 class="title title-small">Download New Visvesmruti 2018 App from Here</h4>
+                    </div>
+                    <a href="https://play.google.com/store/apps/details?id=fetr.ac.in.visvesmruti2018">
+                        <div class="block">
+                            <img src="img/google.png" class="logo-main centered" height="30%" width="30%">
+                        </div>
+                    </a>
+                </div>                
+				<div class="screen-2">                    
+					<div class="block">
+						<h3 class="title title-medium">Departments</h3>
+				    </div>
+				<!-- end of block -->
+				<div class="rhombs">
+                    <div class="rhomb-wrapper flip-container">                        
+                        <div class="rhomb flipper">
+                            <a href="computer.html">
+                            <div class="front">
+                                <div class="front-content">
+                                    <img src="img/computer.gif" alt="" height="230px" width="230px">
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="back-content">
+                                    <div class="color"> 
+                                        <span class="big">Computer Engineering</span> 
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>                        
+                    </div>
+                    <div class="rhomb-wrapper flip-container">                        
+                        <div class="rhomb flipper">
+                            <a href="civil.html">
+                            <div class="front">
+                                <div class="front-content">
+                                    <img src="img/civil.gif" alt="" height="230px" width="230px">
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="back-content">
+                                    <div class="color"><span class="big">Civil Engineering</span> 
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>                        
+                    </div>
+                    <div class="rhomb-wrapper flip-container">                        
+                        <div class="rhomb flipper">
+                            <a href="chemical.html">
+                            <div class="front">
+                                <div class="front-content">
+                                    <img src="img/chemical.gif" alt="" height="230px" width="230px">
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="back-content">
+                                    <div class="color"><span class="big">Chemical Engineering</span> 
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="rhombs">                    
+                    <div class="rhomb-wrapper flip-container">                        
+                        <div class="rhomb flipper">
+                            <a href="mechanical.html">
+                            <div class="front">
+                                <div class="front-content">
+                                    <img src="img/mechanical.gif" alt="" height="230px" width="230px">
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="back-content">
+                                    <div class="color"> <span class="big">Mechanical Engineering</span> 
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div> 
+                    </div>
+                    <div class="rhomb-wrapper flip-container">                        
+                        <div class="rhomb flipper">
+                            <a href="electrical.html">
+                            <div class="front">
+                                <div class="front-content">
+                                    <img src="img/electrical.gif" alt="" height="230px" width="230px">
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="back-content">
+                                    <div class="color"> <span class="big">Electrical  Engineering</span> 
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>                                                
+                    </div>
+                </div>
+                <div class="rhombs">                    
+                    <div class="rhomb-wrapper flip-container">                        
+                        <div class="rhomb flipper">
+                            <a href="sciandhum.html">
+                            <div class="front">
+                                <div class="front-content">
+                                    <img src="img/science.gif" alt="" height="230px" width="230px">
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="back-content">
+                                    <div class="color"> <span class="big">Science & Humanity</span> 
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>                        
+                    </div>
+                </div>
+                <!-- end of rhombs -->
+            </div>
+				<!-- end of rhombs -->
+			<!-- END OF THE 2nd SCREEN -->
+            <div class="screen-9">
+                <div class="block">
+                    <h3 class="title title-medium">Time Table</h3>
+                    <h4 class="title title-small">Check Your Event Timing Here</h4>
+                </div>
+                <div class="block">
+                    <img class="timetable" src="img/timetable.png">
+                </div>
+            </div>
+            <br><br><br><br>
+			<div class="screen-3">
+				<div class="block">
+					<h3 class="title title-medium">Main Attraction</h3> 
+					<h4 class="title title-small">first time in history of Visvesmruti, we are introducting voice chat assistant in 2018</h4>
+                </div>
+                <div class="planet-2-area left">
+                    <div class="planet-2-orbit"></div>
+                    <img src="img/rocket-yellow.png" alt="" class="orbit-rocket">
+                    <div class="planet-2">
+                        <img src="img/planet-2.png" alt="">
+                    </div>
+                    <div class="text-layer">
+                        <p style="text-align: center;">IN VISVESMRUTI 2K18</p>
+                        <h3 class="title title-medium">INTRODUCING  HELPII</h3>
+                        <p style="text-align: center;">TECHFEST ASSISTANT</p>
+                    </div>
+                </div>
+                <div class="planet-2-area right">
+                    <div class="planet-2-orbit"></div>
+                    <img src="img/rocket-yellow.png" alt="" class="orbit-rocket">
+                    <div class="planet-2">
+                        <img src="img/planet-2.png" alt="">
+                    </div>
+                    <div class="text-layer">
+                        <p style="text-align: center;">IN VISVESMRUTI 2K18</p>
+                        <h3 class="title title-medium"><img src="img/prize.png" style="padding-left: 325px;" alt=""></h3>
+                    </div>
+                </div>
+            </div>
+            <!-- THE 3rd SCREEN -->
+            <div id='rocket-screen'>
+                <div class="block">
+                    <h1 class="title title-medium"> Sponsors</h1>
+                </div>
+                <!-- end of block -->
+                <div class="start screen-4">
+                    <div class="rocket rocket-1">
+                        <img src="img/aarti.png" alt="" height="150px" width="150px">
+                    </div>
+                    <div class="rocket rocket-1">
+                        <img src="img/npcil.png" alt="" height="150px" width="150px">
+                    </div>
+                    <div class="rocket rocket-1">
+                        <img src="img/pepl.gif" alt="" height="150px" width="150px">
+                    </div>
+                    <div class="rocket rocket-1">
+                        <img src="img/setu.jpg" alt=""  height="150px" width="200px">
+                    </div>
+                </div>
+                <div class="start screen-4" style="margin-top: -10px;">
+                    <div class="rocket rocket-4" >
+                        <img src="img/jkpaper.jpg" alt="" height="150px" width="150px" >
+                    </div>
+                    <div class="rocket rocket-4">
+                        <img src="img/ice.png" alt="" height="150px" width="150px" >
+                    </div>
+                    <div class="rocket rocket-4">
+                        <img src="img/kub.jpg" alt="" height="150px" width="150px" >
+                    </div>
+                    <div class="rocket rocket-4">
+                        <img src="img/sumul.png" alt="" height="150px" width="150px" >
+                    </div>
+                </div>
+            </div>
+            <!-- END OF THE 3rd SCREEN -->
+            <!-- THE 4th SCREEN -->
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="screen-5">
+                <div class="block">
+                    <table class="text" style="width:100%;">
+                        <tr>
+                            <th colspan="3" style=" line-height:100px; ">
+                                <h1 style="font-size: 80px;">Committee </h1></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="font-size:30px; line-height:70px;">Chief Patron</td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:30px; line-height:70px;">Event Coordinator</td>
+                            <td style="font-size:40px; line-height:70px;"><i>Dr. Latesh B Chaudhri</i></td>
+                            <td style="font-size:30px; line-height:70px;">Event Co-coordinator</td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:40px; line-height:70px;"><i>Prof. K.B. Rathod</i></td>
+                            <td style="font-size:20px; line-height:70px; align-text: left;"><b>(Principal, FETR)</b></td>
+                            <td style="font-size:40px; line-height:70px;"><i>Prof. Vivek C. Joshi</i></td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:20px; line-height:30px; align-text: left;"><b>kbr.fetr@gmail.com</b></td>
+                            <td style="font-size:20px; line-height:40px; align-text: left;"><b></b></td>
+                            <td style="font-size:20px; line-height:30px; align-text: left;"><b>vcj.fetr@gmail.com</b></td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:20px; line-height:30px; align-text: right;"><b>(09924044142)</b></td>
+                            <td style="font-size:20px; line-height:40px; align-text: left;"><b></b></td>
+                            <td style="font-size:20px; line-height:30px; align-text: right;"><b>(09510922936)</b></td>
+                        </tr>
+                    </table>
+                    <br><br><br>
+                    <table class="text" style="width:100%;">
+                        <tr>
+                            <th colspan="3" style=" line-height:100px; ">
+                                <h1 style="font-size: 80px;">Technical Coordinators </h1></td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:30px; line-height:50px;">Chemical</td>
+                            <td style="font-size:30px; line-height:50px;">Civil</td>
+                            <td style="font-size:30px; line-height:50px;">Computer</td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:30px; line-height:50px;"><i>Prof. Piyush R. Nakum</i></td>
+                            <td style="font-size:30px; line-height:50px;"><i>Prof. Nirav P. Desai</i></td>
+                            <td style="font-size:30px; line-height:50px;"><i>Prof. Dharmistha R. Chaudhri</i></td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:20px; line-height:30px; align-text: left;"><b>prn.fetr@gmail.com</b></td>
+                            <td style="font-size:20px; line-height:30px; align-text: left;"><b>npd.fetr@gmail.com</b></td>
+                            <td style="font-size:20px; line-height:30px; align-text: left;"><b>drc.fetr@gmail.com</b></td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:20px; line-height:60px; align-text: right;"><b>(07698903183)</b></td>
+                            <td style="font-size:20px; line-height:60px; align-text: right;"><b>(09099059599)</b></td>
+                            <td style="font-size:20px; line-height:60px; align-text: right;"><b>(09327736461)</b></td>
+                        </tr>
+                    </table>
+                    <table class="text" style="width:100%;">
+                        <tr>
+                            <td style="font-size:30px; line-height:50px;">Electrical</td>
+                            <td style="font-size:30px; line-height:50px;">Mechanical</td>
+
+                        </tr>
+                        <tr>
+                            <td style="font-size:30px; line-height:50px;"><i>Prof. Milind H. Kansara</i></td>
+                            <td style="font-size:30px; line-height:50px;"><i>Prof. Hardik B. Nayak</i></td>
+
+                        </tr>
+                        <tr>
+                            <td style="font-size:20px; line-height:30px; align-text: left;"><b>mhk.fetr@gmail.com</b></td>
+                            <td style="font-size:20px; line-height:30px; align-text: left;"><b>hbn.fetr@gmail.com</b></td>
+
+                        </tr>
+                        <tr>
+                            <td style="font-size:20px; line-height:30px; align-text: right;"><b>(09427834577)</b></td>
+                            <td style="font-size:20px; line-height:30px; align-text: right;"><b>(09429056526)</b></td>
+
+                        </tr>
+                    </table>
+                    <table class="text" style="width:100%;">
+                        <tr>
+
+                            <td style="font-size:30px; line-height:50px;">Science & Humanity</td>
+                        </tr>
+                        <tr>
+
+                            <td style="font-size:30px; line-height:50px;"><i>Prof. Mehul H. Mangrola</i></td>
+                        </tr>
+                        <tr>
+
+                            <td style="font-size:20px; line-height:20px; align-text: left;"><b>mhm.fetr@gmail.com</b></td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:20px; line-height:30px; align-text: right;"><b>(09426746135)</b></td>
+
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- END OF THE 4th SCREEN -->
+            <!-- THE 5th SCREEN -->
+            <div class="screen-3">
+                <!-- end of block -->
+                <div class="block block-special">
+                </div>
+            </div>
+            <!-- END OF THE 5th SCREEN -->
+            <!-- THE 6th SCREEN -->
+            <div class="screen-6">
+                <div class="block">
+                    <h3 class="title title-medium">Gallery</h3>
+                    <p class="text">Memories of Visvesmruti 2017</p>
+                </div>
+                <!-- end of block -->
+            </div>
+        </div>
+        <!-- end of center -->
+    </div>
+    <!-- end of container -->
+    <ul class="modules clearfix">
+        <li class="module">
+            <article>
+                <div id='s1' class="thumb">
+                    <div>
+                        <img src="vs_photos/events/e1.jpg">
+                    </div>
+                    <div>
+                        <img src="vs_photos/events/e2.jpg">
+                    </div>
+                    <div>
+                        <img src="vs_photos/events/e3.jpg">
+                    </div>
+                    <div>
+                        <img src="vs_photos/events/e4.jpg">
+                    </div>
+                    <div>
+                        <img src="vs_photos/events/e5.jpg">
+                    </div>
+                </div>
+                <div class="info">
+                    <h3 class="title title-smaller">EVENTS</h3>
+                </div>
+            </article>
+        </li>
+        <li class="module">
+            <article>
+                <div id='s2' class="thumb">
+                    <div>
+                        <img src="vs_photos/inaugural/i1.jpg">
+                    </div>
+                    <div>
+                        <img src="vs_photos/inaugural/i2.jpg">
+                    </div>
+                    <div>
+                        <img src="vs_photos/inaugural/i3.jpg">
+                    </div>
+                    <div>
+                        <img src="vs_photos/inaugural/i4.jpg">
+                    </div>
+                     <div>
+                        <img src="vs_photos/inaugural/i5.jpg">
+                    </div>
+                </div>
+                <div class="info">
+                    <h3 class="title title-smaller">INAUGURAL</h3>
+                </div>
+            </article>
+        </li>
+        <li class="module">
+            <article>
+                <div id='s3' class="thumb">
+                    <div>
+                        <img src="vs_photos/paper_poster_model/p1.jpg">
+                    </div>
+                    <div>
+                        <img src="vs_photos/paper_poster_model/p2.jpg">
+                    </div>
+                    <div>
+                        <img src="vs_photos/paper_poster_model/p3.jpg">
+                    </div>
+                    <div>
+                        <img src="vs_photos/paper_poster_model/p4.jpg">
+                    </div>
+                     <div>
+                        <img src="vs_photos/paper_poster_model/p5.jpg">
+                    </div>
+                </div>
+                <div class="info">
+                    <h3 class="title title-smaller">PAPER/POSTER PRESENTATION</h3>
+                </div>
+            </article>
+        </li>
+        <li class="module">
+            <article>
+                <div id='s4' class="thumb">
+                    <div>
+                        <img src="vs_photos/prize/pr1.jpg">
+                    </div>
+                    <div>
+                        <img src="vs_photos/prize/pr2.jpg">
+                    </div>
+                    <div>
+                        <img src="vs_photos/prize/pr3.jpg">
+                    </div>
+                    <div>
+                        <img src="vs_photos/prize/pr4.jpg">
+                    </div>
+                    <div>
+                        <img src="vs_photos/prize/pr5.jpg">
+                    </div>
+                </div>
+                <div class="info">
+                    <h3 class="title title-smaller">PRIZE DISTRIBUTION</h3>
+                </div>
+            </article>
+        </li>
+        <li class="module">
+            <article>
+                <div id='s5' class="thumb">
+                    <div>
+                        <img src="vs_photos/robo/r1.jpg">
+                    </div>
+                    <div>
+                        <img src="vs_photos/robo/r2.jpg">
+                    </div>
+                    <div>
+                        <img src="vs_photos/robo/r3.jpg">
+                    </div>
+                    <div>
+                        <img src="vs_photos/robo/r4.jpg">
+                    </div>
+                    <div>
+                        <img src="vs_photos/robo/r5.jpg">
+                    </div>
+                </div>
+                <div class="info">
+                    <h3 class="title title-smaller">ROBOS</h3>
+                </div>
+            </article>
+        </li>
+    </ul>
+    <!-- END OF THE 6th SCREEN -->
+    <!-- THE 7th SCREEN -->
+    <div class="container" style='padding-top: 0;'>
+        <div class="center">
+            <div class="screen-7">
+                <div class="block" style='margin-top: 0;'>
+                    <h3 class="title title-medium">Developers</h3>
+                    
+                </div>
+                <div class="planet-3-area centered">
+                    <canvas id="canvasMagneto" class="magneto" width="750" height="900"></canvas>
+                    <div class="planet-3-obits">
+                        <span id="name" class="text-huge"></span>
+                        <!-- <p id="mail" class="text-small"></p> -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- end of center -->
+    </div>
+    <!-- end of container -->
+    <!-- END OF THE 7th SCREEN -->
+    <!-- THE LAST 8th SCREEN -->
+    <div class="screen-8">
+        <div class="block-bottom">
+            <div class="block-bottom-top"></div>
+            <div class="block-bottom-main">
+                <div id="clouds">
+                    <div class="cloud cloud-1"></div>
+                    <div class="cloud cloud-2"></div>
+                    <div class="cloud cloud-3"></div>
+                    <div class="cloud cloud-4"></div>
+                    <div class="cloud cloud-5"></div>
+                    <div class="cloud cloud-6"></div>
+                </div>
+                <div class="container">
+                    <div class="observatory">
+                        <div class="navigator"></div>
+                    </div>
+                    <div class="block-bottom-content">
+                        <h3 class="title title-medium" style="padding-left: 50px;">R.N.G. PATEL INSTITUTE OF TECHNOLOGY 
+                        <br>(Formally Known as FETR) </h3>
+                        <p class="text" style="padding-left: 50px;">Address: Bardoli – Navsari Road, At: Isroli Tal : Bardoli – 394620 Dist: Surat</p>
+                        <p class="text" style="padding-left: 50px;">Contact No. : +91 9512900457, +91 9512900458, (02622) 290933</p>
+                        <br><br>
+                        <div class="questions" style="padding-left: 50px;">
+                            <p style="color: black; font-size:18px;">Website :</p> <a href="http://fetr.ac.in">http://fetr.ac.in</a>
+                        </div>
+                        <div class="questions" style="padding-left: 50px;">
+                            <p style="color: black; font-size:18px;">If you have questions, address here</p> <a href="mailto:fetr.bardoli@gmail.com">fetr.bardoli@gmail.com</a>
+                        </div>
+                        <br><br>
+                        <div class="questions" style="padding-left: 50px;"><a href="#"><img border="0" src="http://cc.amazingcounters.com/counter.php?i=3226529&c=9679900"></a></div>
+                    </div>
+                    <!-- end of block-bottom-content -->
+                </div>                
+                <!-- end of container -->
+            </div>
+            <!-- end of block-bottom-main -->
+        </div>
+        <!-- end of block-bottom -->
+    </div>
+    <!-- END OF THE LAST 8th SCREEN -->
+    <div class="wrapper-nebula">
+        <div id="container" class="container-nebula">
+            <div id="output" class="container-nebula"></div>
+        </div>
+    </div>
+    <canvas id="bg-stars" class="bg-stars"></canvas>
+    <canvas id="world" class="planet-3-orbit" width="800" height="600"></canvas>
+    <canvas id="world-2" class="planet-3-orbit" width="800" height="600"></canvas>
+    <canvas id="world-3" class="planet-3-orbit" width="800" height="600"></canvas>
+    <canvas id="stars-cursor"></canvas>
+    </div>
+    <!-- end of page-wrapper -->
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+    <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+    <script type='text/javascript'>
+        var isMobile = false;
+    </script>
+    <script src="js/vendor/jquery-2.1.1.min.js"></script>
+    <script src="js/min/modernizr-2.0.6-min.js"></script>
+    <script src="js/pixi.js"></script>
+    <script src="js/min/austro-min.js"></script>
+    <script src="js/bg-stars-pixi.js"></script>
+    <script src="js/min/fss-min.js"></script>
+    <script src="js/min/magneto-min.js"></script>
+    <script src="js/min/main-min.js"></script>
+    <script src="js/min/asteroids-min.js"></script>
+    <script src="js/min/typed.min.js"></script>
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            $("#s1 > div:gt(0)").hide();
+            $("#s2 > div:gt(0)").hide();
+            $("#s3 > div:gt(0)").hide();
+            $("#s4 > div:gt(0)").hide();
+            $("#s5 > div:gt(0)").hide();
+            setInterval(function() {
+                $('#s1 > div:first').fadeOut(1000).next().fadeIn(1000).end().appendTo('#s1');
+                $('#s2 > div:first').fadeOut(1000).next().fadeIn(1000).end().appendTo('#s2');
+                $('#s3 > div:first').fadeOut(1000).next().fadeIn(1000).end().appendTo('#s3');
+                $('#s4 > div:first').fadeOut(1000).next().fadeIn(1000).end().appendTo('#s4');
+                $('#s5 > div:first').fadeOut(1000).next().fadeIn(1000).end().appendTo('#s5');
+            }, 3000);
+
+            $("#loader").animate({
+                "top": 0
+            }, 1000, function() {
+                $("#loader").fadeOut("slow");
+            });
+
+            var typed3 = new Typed('#name', {
+                strings: ['Kuldip Patel\n<p class="text-small">patel.kuldip91@gmail.com</p>',
+                         'Darshan Mistry\n<p class="text-small">1111darsh@gmail.com</p>', 
+                         'Dhiren Jummani\n<p class="text-small">dhiren.jummani.jhd@gmail.com</p>', 
+                         'Mahendra Sharma\n<p class="text-small">mkbls77@gmail.com</p>', 
+                         'Saurabh Jha\n<p class="text-small">saurabhjha137@gmail.com</p>', 
+                         'Hardik Barvaliya\n<p class="text-small">barvaliyahardik157@gmail.com</p>',
+                         'Aadil Shaikh\n<p class="text-small">aadilshaikh862@gmail.com</p>'
+                         ],
+                typeSpeed: -6,
+                backSpeed: 0,
+                startDelay: 1000,
+                backDelay: 2000,
+                fadeOut: true,
+                showCursor: false,
+                loop: true
+            });
+            /* $("#loader span").delay(0).animate({"top": "51%"},100,function(){ 
+            	$(".cow").animate({"margin-top": "300px", "opacity": 0},200); 
+            	$("#loader span").animate({"top": -200},700, function(){ 
+            		$("#loader").fadeOut("fast"); 
+            	}); 
+            }) */
+        })
+    </script>
+    <script type='text/javascript'>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Sep 14, 2018 08:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get todays date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="demo"
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+            // If the count down is finished, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "Welcome!";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
